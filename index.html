@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://kit.fontawesome.com/65b6f7f7c8.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe challenge 4</title>
+</head>
+
+<body>
+    <div class="container" id="con">
+        <div class="Playersc" id="PlayerScore">
+            <div class="namepartP" id="NP">
+            </div>
+            <div class="scoreP" id="SP">
+            </div>
+        </div>
+        <div class="field" id="field"></div>
+        <div class="Computer" id="ComputerScore">
+            <div class="namepartC" id="NC">
+            </div>
+            <div class="scoreC" id="SC">
+            </div>
+        </div>
+        <div class="text" id="wc">Welcome to Tic Tac Toe</div>
+        <div class="name" id="nm">
+            <div class="Texty"><div class="T"> Player1</div></div>
+            <div class="TextField"><input class="playerName" id="pname1" placeholder="Looser"></div>
+        </div>
+        <div class="startButton" onclick="game()" id="btn">Start</div>
+        <div class="reset" onclick="reset()" id = "reset">Continue Game</div>
+        <div class="status" id="status"></div>
+        <div class="turn" id="turn"></div>
+        <div class="restart" id="restart" onclick="restart()">restart</div> 
+    </div>
+    <div class="maze" id="maze">
+        <div class="row1" id="r1">
+            <button class="b b1" onclick="gamestarter(this,0)" id="button0"></button>
+            <button class="b b2" onclick="gamestarter(this,1)" id="button1"></button>
+            <button class="b b3" onclick="gamestarter(this,2)" id="button2"></button>
+        </div>
+        <div class="row2" id="r2">
+            <button class="b b1" onclick="gamestarter(this,3)" id="button3"></button>
+            <button class="b b2" onclick="gamestarter(this,4)" id="button4"></button>
+            <button class="b b3" onclick="gamestarter(this,5)" id="button5"></button>
+        </div>
+        <div class="row3" id="r3">
+            <button class="b b1" onclick="gamestarter(this,6)" id="button6"></button>
+            <button class="b b2" onclick="gamestarter(this,7)" id="button7"></button>
+            <button class="b b3" onclick="gamestarter(this,8)" id="button8"></button>
+        </div>
+    </div>
+    
+    <script src="static/app.js"></script>
+    <footer style="text-align: left;font-size: 12px;">
+        MADE BY: HRITIK MANDAL <i class="fas fa-atom" style="font-size: 20px;"></i> || applied algo : MINIMAX || 1805124@kiit.ac.in || CHECK ME ON <a href="https://github.com/1805124">GitHub</a>
+    </footer>
+</body>
+
+</html>
