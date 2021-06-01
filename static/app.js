@@ -280,6 +280,16 @@ function temporary(name)
     m.innerHTML = name + " wins";
     document.getElementById("turn").innerHTML = "";
     document.getElementById("reset").style.display = "flex";
+    document.getElementById("button0").disabled = true;
+    document.getElementById("button1").disabled = true;
+    document.getElementById("button2").disabled = true;
+    document.getElementById("button3").disabled = true;
+    document.getElementById("button4").disabled = true;
+    document.getElementById("button5").disabled = true;
+    document.getElementById("button6").disabled = true;
+    document.getElementById("button7").disabled = true;
+    document.getElementById("button8").disabled = true;
+
 }
 
 
